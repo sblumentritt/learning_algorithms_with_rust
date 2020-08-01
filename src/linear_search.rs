@@ -1,3 +1,5 @@
+#[allow(dead_code)]
+
 // - choice for short lists
 // - simple and requires minimal code to implement
 // - traverses a list from start to end or till a match is found

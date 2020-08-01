@@ -37,3 +37,4 @@ better understanding how they work and when to use them.
 - https://stackoverflow.com/questions/1933759/when-is-each-sorting-algorithm-used
 - https://en.wikipedia.org/wiki/Sorting_algorithm
 - http://practicalcryptography.com/ciphers/
+- https://en.wikipedia.org/wiki/Binary_search_algorithm
