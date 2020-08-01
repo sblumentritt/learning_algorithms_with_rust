@@ -5,7 +5,7 @@ better understanding how they work and when to use them.
 
 ## search
 
-- [ ] linear search
+- [x] linear search
 - [ ] binary search
 - [ ] depth/breadth first search
 - [ ] ternary search
