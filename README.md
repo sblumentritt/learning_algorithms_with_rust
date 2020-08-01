@@ -38,3 +38,5 @@ better understanding how they work and when to use them.
 - https://en.wikipedia.org/wiki/Sorting_algorithm
 - http://practicalcryptography.com/ciphers/
 - https://en.wikipedia.org/wiki/Binary_search_algorithm
+
+[Rust]: https://www.rust-lang.org/
