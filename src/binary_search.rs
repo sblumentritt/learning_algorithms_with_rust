@@ -5,22 +5,24 @@
 // - if target number greater than middle search upper half
 // - repeats this process until it finds the target
 // - more complicated than linear search but faster for large data
-// TODO:
-// - fix negativ lookup value edge case
-// - fix empty list edge case
 fn binary_search(lookup: i32, list: &[i32]) -> Option<usize> {
     if list.len() == 0 {
         return None;
     }
 
-    let mut left = 0;
-    let mut right = list.len() - 1;
+    let mut left: usize = 0;
+    let mut right: usize = list.len() - 1;
 
     while left <= right {
-        let mid = (left + right) / 2;
+        let mid: usize = (left + right) / 2;
         if list[mid] < lookup {
             left = mid + 1;
         } else if list[mid] > lookup {
+            // prevent subtract overflow when lookup is negativ and not in the input
+            if right == 0 {
+                break;
+            }
+
             right = mid - 1;
         } else {
             return Some(mid);
