@@ -9,6 +9,10 @@
 // - fix negativ lookup value edge case
 // - fix empty list edge case
 fn binary_search(lookup: i32, list: &[i32]) -> Option<usize> {
+    if list.len() == 0 {
+        return None;
+    }
+
     let mut left = 0;
     let mut right = list.len() - 1;
 
